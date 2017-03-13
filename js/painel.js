@@ -158,6 +158,19 @@
                 if (typeof(args.complete) === 'function') {
                     args.complete(response);
                 }
+                
+                //SOMENTE ESSES TIPOS MOSTRAM O GUICHE
+                var tipos_de_atendimento = [ 'Atendimento', 'Atend. Saúde', 'Cad. NUSOL', 'Cad. Consumidor' ];
+
+                if( $('#local span').html() !== 'Guichê' )
+		        {
+		        	$('#local-numero span').removeClass('hidden');
+
+		            if( tipos_de_atendimento.indexOf( $('#local span').html() ) === -1 )
+					{
+					    $('#local-numero span').addClass('hidden');
+					}
+		        }
             }
         });
     };
