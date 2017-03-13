@@ -159,10 +159,10 @@
                     args.complete(response);
                 }
                 
-                //SOMENTE ESSES TIPOS MOSTRAM O GUICHE
-                var tipos_de_atendimento = [ 'Atendimento', 'Atend. Saúde', 'Cad. NUSOL', 'Cad. Consumidor' ];
+				//SOMENTE ESSES TIPOS MOSTRAM O GUICHE
+				var tipos_de_atendimento = [ 'Atendimento', 'Atend. Saúde', 'Cad. NUSOL', 'Cad. Consumidor' ];
 
-                if( $('#local span').html() !== 'Guichê' )
+				if( $('#local span').html() !== 'Guichê' )
 				{
 					$('#local-numero span').removeClass('hidden');
 
