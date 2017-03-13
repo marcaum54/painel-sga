@@ -163,16 +163,15 @@
                 var tipos_de_atendimento = [ 'Atendimento', 'Atend. Saúde', 'Cad. NUSOL', 'Cad. Consumidor' ];
 
                 if( $('#local span').html() !== 'Guichê' )
-		        {
-		        	$('#local-numero span').removeClass('hidden');
+				{
+					$('#local-numero span').removeClass('hidden');
 
-		            if( tipos_de_atendimento.indexOf( $('#local span').html() ) === -1 )
+					if( tipos_de_atendimento.indexOf( $('#local span').html() ) === -1 )
 					{
-					    $('#local-numero span').addClass('hidden');
+						$('#local-numero span').addClass('hidden');
 					}
-		        }
+				}
             }
         });
     };
-    
 })(jQuery);
